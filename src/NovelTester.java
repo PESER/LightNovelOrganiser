@@ -11,8 +11,12 @@ public class NovelTester {
 		myRelatedSeries.add("Sequel"); myRelatedSeries.add("Spin-off");
 		
 		Novel myNovel = new Novel(myName, myVolume, myRating, myAuthor, myRelatedSeries);
+		myNovel.setVolume(myVolume);
 		
 		myNovel.printDetails();
+		
+		myNovel.setName("Test name 2"); //testing a new novel name
+		System.out.println(myNovel.getName()); //prints title using getter method
 	}
 
 }
