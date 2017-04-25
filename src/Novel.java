@@ -72,7 +72,7 @@ public class Novel {
 		}
 	}
 	
-	public void printDetails() {
+	public void printNovelDetails() {
 		System.out.println("\n-=-=-Novel Series-=-=-");
 		System.out.println("Title: " + this.name);
 		System.out.println("Rating: " + this.rating);

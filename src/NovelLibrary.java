@@ -16,4 +16,16 @@ public class NovelLibrary {
 		this.allNovel = allNovel;
 	}
 
+	public void printAllNovelDetails() {
+		for(Novel eachNovel: allNovel) {
+			eachNovel.printNovelDetails();
+		}
+	}
+	
+	public void printNovelName() {
+		for(int i = 0; i < allNovel.size(); i++) {
+			System.out.println((i + 1) + ": " + allNovel.get(i).getName());
+		}
+	}
+	
 }
